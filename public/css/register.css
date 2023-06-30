@@ -1,0 +1,27 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Resetando o estilo da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Adicionando uma variável na raiz */
+
+:root {
+    --primary-color: #0D6EFD;
+}
+
+#header {
+    padding: 20px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+#header h1 {
+    color: white;
+    font-weight: 600;
+}

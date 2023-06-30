@@ -1,0 +1,80 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Resetando o estilo da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Adicionando uma variável na raiz */
+
+:root {
+    --primary-color: #0D6EFD;
+}
+
+#header {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+}
+
+#header h1 {
+    color: white;
+    font-weight: 600;
+}
+
+#header .navigation {
+    display: flex;
+    gap: 10px;
+}
+
+#header .btn-register {
+    background-color: #0d3a7e;
+}
+
+.primary-title h1 {
+    padding: 25px;
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+}
+
+.image-card {
+    padding: 20px;
+    width: 600px;
+}
+
+img {
+    width: 100%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 50px;
+}
+
+#footer h3, p {
+    font-size: 17px;
+    margin-top: 10px;
+}
