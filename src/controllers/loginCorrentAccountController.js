@@ -7,7 +7,7 @@ function showInformationsAboutCorrentAccount(req, res) {
         checkingAccountDigit: req.body.checkingAccountDigit,
         accountOwner: req.body.accountOwner
     }
-    res.render('loginCorrentAccount.html', {message: `Olá, ${checkingAccount.accountOwner}`});
+    res.render('loginCorrentAccount.html', {message: `Olá, ${checkingAccount.accountOwner}. Estou feliz de tê-lo(a) conosco!`});
 };
 
 module.exports = {

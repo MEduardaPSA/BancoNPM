@@ -16,8 +16,55 @@
             </form>
         </nav>
     </header>
-    <h1 class="text-center mt-4">{{message}}</h1>
-    <h5 class="text-center">Estou feliz de tê-lo(a) conosco!</h5>
+    <div class="container text-center">
+        <h1 class="text-center mt-4">{{message}}</h1>
+        <button type="button" class="btn btn-success mt-5 d-block w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Adicionar Saldo
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Deseja adicionar saldo a sua Conta Corrente?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Total saldo: </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <form action="/adicionar-saldo" method="post">
+                        <button type="submit" class="btn btn-primary">Adicionar</button>
+                    </form>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary mt-3 d-block w-100" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Enviar Saldo
+        </button>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">Deseja enviar saldo?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Total saldo: </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <form action="/enviar-saldo" method="post">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
 
 
 
