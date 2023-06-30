@@ -19,13 +19,14 @@ app.use(session({
   }));
 
 app.get('/', function(req, res){
-    res.render('index.html', {message: 'hello world'});
+    res.render('index.html', {});
 });
 
 app.use('/', require('./src/routers/registerRoutes'));
 app.use('/', require('./src/routers/logoffRoutes'));
 app.use('/', require('./src/routers/loginRoutes'));
-app.use('/', require('./src/routers/toEnterRoutes'));
+app.use('/', require('./src/routers/enterRoutes'));
+app.use('/', require('./src/routers/loginCorrentAccountRoutes'));
 
 const port = 8000;
 

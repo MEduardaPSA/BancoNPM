@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="/css/enter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <header id="header">
+        <h1>BANCO NPM</h1>
+        <nav class="navigation">
+            <form action="/sair" method="post">
+                <button type="submit" class="btn btn-danger">Sair</button>
+            </form>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="text-center m-3">Olá, bem vindo(a) ao seu novo Banco Digital!</h1>
+        <h2 class="text-center m-3">Vamos abrir a sua Conta Corrente?</h2>
+        <form action="/login-conta-corrente" method="post" class="row g-3">
+            <div class="col-md-4">
+                <label for="Banco" class="form-label">Banco</label>
+                <input type="text" class="form-control" id="bank" name="{{bank}}" maxlength="3">
+            </div>
+            <div class="col-md-4">
+                <label for="Agencia" class="form-label">Agência</label>
+                <input type="text" class="form-control" id="agency" name="{{agency}}" maxlength="4">
+            </div>
+            <div class="col-4">
+                <label for="Dígito Agência" class="form-label">Dígito Agência</label>
+                <input type="number" class="form-control" id="agencyDigit" name="{{agencyDigit}}" max="1">
+            </div>
+            <div class="col-6">
+                <label for="Conta Corrente" class="form-label">Conta Corrente</label>
+                <input type="text" class="form-control" id="checkingAccount" name="{{checkingAccount}}">
+            </div>
+            <div class="col-md-6">
+                <label for="Dígito Conta Corrente" class="form-label">Dígito Conta Corrente</label>
+                <input type="text" class="form-control" id="checkingAccountDigit" name="{{checkingAccountDigit}}">
+            </div>
+            <div class="col-md-12">
+                <label for="Títular da Conta" class="form-label">Títular da Conta</label>
+                <input type="text" class="form-control" id="accountOwner" name="accountOwner">
+            </div>
+            <div class="col-12">
+             <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Confirmo que li e aceito todos os termos!
+                  </label>
+            </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">Criar conta corrente</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
