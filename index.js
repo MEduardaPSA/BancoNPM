@@ -27,6 +27,7 @@ app.use('/', require('./src/routers/logoffRoutes'));
 app.use('/', require('./src/routers/loginRoutes'));
 app.use('/', require('./src/routers/enterRoutes'));
 app.use('/', require('./src/routers/loginCorrentAccountRoutes'));
+app.use('/', require('./src/routers/addRoutes'));
 
 const port = 8000;
 

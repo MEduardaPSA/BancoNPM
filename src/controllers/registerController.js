@@ -10,7 +10,6 @@ function registerView(req, res) {
         gridCheck: req.body.gridCheck
     }
     res.render('register.html', {pessoa});
-    
 };
 
 module.exports = {
